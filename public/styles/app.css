@@ -1,0 +1,462 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	height: 45px;
+	border-bottom: 1px solid #ccc;
+}
+
+#menuInput {
+	float: left;
+	margin-left: 15px;
+}
+
+#menu input[type=text] {
+	width: 280px;
+	height: 30px;
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 0 35px 0 5px;
+}
+
+#submitSearch {
+	width: 32px;
+	height: 32px;
+	border: 0;
+	background: url(/img/search.png) center no-repeat transparent;
+	background-size: 20px;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	left: -36px;
+	vertical-align: middle;
+}
+
+#menuLeft {
+	padding: 7px;
+}
+
+#menuLeftImg {
+	float: left;
+	margin-left: 5px;
+}
+
+#menuLeftImg > img {
+	width: 32px;
+}
+
+#menuLeftTitle {
+	float: left;
+	padding: 5px 5px 7px 7px;
+	font-size: 17px;
+}
+
+#menuLeftTitle a {
+	color: #000;
+}
+
+#menuSocial {
+	float: right;
+	padding: 5px;
+}
+
+#menuSocial img {
+	width: 32px;
+}
+
+#menuSocialSlack {
+	margin-right: 10px;
+}
+
+#infoMessage {
+	position: absolute;
+	z-index: 1001;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 45px;
+	font-size: 20px;
+	padding: 13px;
+	color: #fff;
+	background-color: #ff8585;
+	cursor: pointer;
+	display: none;
+}
+
+#cy {
+	position: absolute;
+	left: 0;
+	right: 450px;
+	top: 45px;
+	bottom: 0;
+	z-index: 999;
+}
+
+#info {
+	position: absolute;
+	right: 0;
+	top: 45px;
+	bottom: 0;
+	width: 450px;
+	border-left: 1px solid #ccc;
+	overflow: auto;
+}
+
+#unitParent {
+	padding-left: 5px;
+}
+
+#unit {
+	color: #808080;
+}
+
+#infoClose, #addressClose {
+	text-align: right;
+	font-size: 18px;
+	margin: 10px;
+	display: none;
+}
+
+#addressClose {
+	display: block;
+	margin: 10px auto;
+}
+
+#defaultInfo {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+#listInfo {
+	display: none;
+	padding-left: 3px;
+}
+
+#info > #listInfo > div {
+	margin-top: 10px;
+}
+
+.infoTitle {
+	font-weight: bold;
+	padding: 5px;
+	cursor: pointer;
+	color: #333333;
+}
+
+.infoTitle:hover {
+	color: #868686;
+}
+
+.infoTitle.hideTitle {
+	color: #868686;
+}
+
+.infoTitle > .infoTitleImg {
+	display: inline-block;
+	background-image: url(/img/arrow_down.png);
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+	margin-bottom: -2px;
+}
+
+.infoTitle.hideTitle > .infoTitleImg {
+	background-image: url(/img/gray_right.png);
+}
+
+.infoTitle.hideTitle:hover {
+	color: #333333;
+}
+
+#addressInfo .infoTitle {
+	padding: 5px 0;
+}
+
+#addressInfo .infoTitle > .infoTitleImg {
+	margin-bottom: -1px;
+}
+
+#addressInfo .infoTitle.hideTitle > .infoTitleImg {
+	margin-bottom: -1px;
+}
+
+.infoTitleChild {
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 7px;
+	cursor: pointer;
+	background-color: #f1f1f1;
+	color: #333333;
+}
+
+.childNotSpoiler {
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 7px;
+	background-color: #f3f3f3;
+	color: #333333;
+}
+
+.messagesInfo {
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+
+.infoTitleInputs, .infoTitleInput {
+	font-weight: bold;
+	margin-bottom: 7px;
+	cursor: pointer;
+	color: #333333;
+}
+
+.inputsInfo, .inputInfo, .inputsInf {
+	margin-bottom: 10px;
+}
+
+.messagesInfo > div {
+	margin-bottom: 5px;
+}
+
+.inputsInfo > div, .inputInfo > div {
+	margin-bottom: 5px;
+}
+
+a {
+	color: #2980b9;
+	text-decoration: none;
+}
+
+#info #authors > div, #info #children > div, #info #parents > div , #info #witnesses > div{
+	display: block;
+	padding: 5px;
+}
+
+pre{
+	margin: 0;
+}
+
+#otherInfo > div {
+	padding: 0 5px;
+}
+
+.outputs_div {
+	margin-bottom: 5px;
+}
+
+.outputs_div > div {
+	margin-bottom: 10px;
+}
+
+.message a {
+	display: inline !important;
+	padding: 0 !important;
+}
+
+.asset {
+	margin-left: 10px;
+}
+
+#witnessesTitle {
+	font-weight: bold;
+	padding: 5px;
+}
+
+#witnessesTitle > a {
+	display: inline;
+	font-weight: 300;
+	color: #2980b9 !important;
+}
+
+.row {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 0.5rem;
+}
+
+.row::before, .row::after, .rowFull::before, .rowFull::after {
+	content: ' ';
+	display: table;
+}
+
+.row::after, .rowFull::after {
+	clear: both;
+}
+
+#infoAndBalanceAddress {
+	margin-top: 20px;
+}
+
+#addressInfo {
+	position: absolute;
+	top: 46px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #fff;
+	font-size: 16px;
+	display: none;
+}
+
+.transactionUnit {
+	background-color: #f1f1f1;
+	padding: 7px 0;
+	margin: 15px 0 5px;
+}
+
+.transactionUnitListAddress {
+	margin: 0 5px 5px 0;
+}
+
+.thisAddress {
+	color: #808080;
+}
+
+#listUnspent > div {
+	margin: 10px 0;
+}
+
+#blockListUnspent {
+	display: none;
+	margin-top: 50px;
+}
+
+#listUnits > tr > td:first-child {
+	width: 45%;
+}
+
+#listUnits > tr > td:nth-child(2) {
+	width: 5%;
+	text-align: center;
+}
+
+#scroll {
+	position: absolute;
+	right: 451px;
+	top: 45px;
+	bottom: 0;
+	width: 50px;
+	overflow: auto;
+	z-index: 999;
+}
+
+#scrollBody {
+	width: 1px;
+}
+
+#goToTop {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	z-index: 999;
+	cursor: pointer;
+	background: url(/img/goToTop.svg) center no-repeat;
+	background-size: 28px;
+	top: 68px;
+	right: 490px;
+	border: 1px solid #5e5e5e;
+	border-radius: 100%;
+}
+
+#goToTop:hover {
+	background: url(/img/goToTop_hover.svg) center no-repeat;
+	background-size: 28px;
+	border: 1px solid #000;
+}
+
+#goToTop:hover > #titleGoToTop {
+	display: block;
+}
+
+#titleGoToTop {
+	position: absolute;
+	top: 52px;
+	text-align: center;
+	width: 68px;
+	left: -11px;
+	display: none;
+}
+
+.numberFormat {
+	/*cursor: pointer;*/
+}
+
+#tableListTransactions {
+	width: 100%;
+    border-collapse: collapse;
+}
+/* adaptive */
+
+@media all and (max-width: 1200px) {
+	#cy, #scroll {
+		right: 0;
+	}
+
+	#goToTop {
+		right: 39px;
+	}
+
+	#cy.showInfoBlock, #scroll.showInfoBlock, #goToTop.showInfoBlock {
+		display: none;
+	}
+
+	#info {
+		width: 100%;
+		left: 0;
+		border: 0;
+	}
+
+	#info.hideInfoBlock {
+		display: none;
+	}
+
+	#infoClose {
+		display: block;
+	}
+
+	#listUnits td {
+		display: block;
+		width: 100%;
+	}
+
+	#listUnits > tr > td:nth-child(2) {
+		padding: 5px 7px 8px;
+	}
+}
+
+@media all and (max-width: 580px) {
+	#menu {
+		height: 85px;
+	}
+
+	#cy, #scroll, #info {
+		top: 85px;
+	}
+
+	#goToTop {
+		top: 109px;
+		right: 22px;
+	}
+
+	#addressInfo {
+		top: 86px;
+	}
+
+	#menuInput, #menuInput > form {
+		width: 98%;
+	}
+
+	#menuInput input[type=text] {
+		width: 81%;
+	}
+}

@@ -1,0 +1,1 @@
+*/5 * * * * cd intervalue-relay; node check_daemon.js 1>>~/.config/intervalue-relay/check_daemon.log 2>>~/.config/intervalue-relay/check_daemon.err
