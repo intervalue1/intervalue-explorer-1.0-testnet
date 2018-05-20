@@ -2,7 +2,7 @@
   "name": "intervalue-explorer",
   "description": "InterValue explorer",
   "author": "InterValue",
-  "version": "1.0.0",
+  "version": "1.0-testnet",
   "main": "start.js",
   "keywords": [
     "explorer",
