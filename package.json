@@ -15,11 +15,11 @@
   },
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/intervalue/intervalue-explorer.git",
+    "url": "git://github.com/intervalue/intervalue-explorer-1.0-testnet.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/intervalue/intervalue-explorer/issues"
+    "url": "https://github.com/intervalue/intervalue-explorer-1.0-testnet/issues"
   },
   "browser": {
     "request": "browser-request",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "async": "^2.1.5",
-    "intervaluecore": "git+https://github.com/intervalue/intervaluecore.git",
+    "intervaluecore": "git+https://github.com/intervalue/intervaluecore-1.0-testnet.git",
     "express": "^4.14.0",
     "moment": "^2.17.1",
     "socket.io": "^1.7.1"
