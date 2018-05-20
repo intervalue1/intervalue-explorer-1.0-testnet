@@ -1,7 +1,7 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('intervaluecore-1.0-testnet/db.js');
+var db = require('intervaluecore/db.js');
 var moment = require('moment');
 var async = require('async');
 var BIGINT = 9223372036854775807;

@@ -1,8 +1,8 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('intervaluecore-1.0-testnet/db.js');
-var storage = require('intervaluecore-1.0-testnet/storage.js');
+var db = require('intervaluecore/db.js');
+var storage = require('intervaluecore/storage.js');
 var moment = require('moment');
 var async = require('async');
 

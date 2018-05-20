@@ -1,8 +1,8 @@
 /*jslint node: true */
 "use strict";
 require('./relay');
-var conf = require('intervaluecore-1.0-testnet/conf.js');
-var eventBus = require('intervaluecore-1.0-testnet/event_bus.js');
+var conf = require('intervaluecore/conf.js');
+var eventBus = require('intervaluecore/event_bus.js');
 var express = require('express');
 var app = express();
 var server = require('http').Server(app);

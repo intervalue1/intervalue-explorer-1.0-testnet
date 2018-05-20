@@ -1,8 +1,8 @@
 {
   "name": "intervalue-explorer",
-  "description": "InterValue explorer",
+  "description": "InterValue explorer 1.0 testnet",
   "author": "InterValue",
-  "version": "1.0-testnet",
+  "version": "1.0.0",
   "main": "start.js",
   "keywords": [
     "explorer",

@@ -1,7 +1,7 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('intervaluecore-1.0-testnet/db.js');
+var db = require('intervaluecore/db.js');
 var units = require('./units');
 var address = require('./address');
 
