@@ -1,7 +1,7 @@
 /*jslint node: true */
 "use strict";
-var conf = require('intervaluecore/conf.js');
-var myWitnesses = require('intervaluecore/my_witnesses.js');
+var conf = require('intervaluecore-1.0-testnet/conf.js');
+var myWitnesses = require('intervaluecore-1.0-testnet/my_witnesses.js');
 
 
 function replaceConsoleLog () {
@@ -14,7 +14,7 @@ function replaceConsoleLog () {
 
 function start () {
 	console.log('starting');
-	var network = require('intervaluecore/network.js');
+	var network = require('intervaluecore-1.0-testnet/network.js');
 	if (conf.initial_peers)
 		conf.initial_peers.forEach(function (url) {
 			network.findOutboundPeerOrConnect(url);
